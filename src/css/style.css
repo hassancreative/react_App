@@ -1,0 +1,51 @@
+ /* input[type="checkbox"]{
+     -webkit-appearance: none;
+ }
+ input[type="checkbox"]{
+     outline: none;
+ }
+ input[type="checkbox"]:before{
+    content:'\2713';
+    color: transparent;
+     width: 18px;
+     height: 18px;
+     border: 1px solid #000;
+     display: flex;
+     overflow: hidden;
+     font-size: 14px;
+     justify-content:center;
+     align-items: center;
+     margin-right: 5px;
+
+ 
+     
+}
+
+input[type="checkbox"]:checked:before{
+    color: #000;
+    outline: none;
+    box-shadow: none;
+} */
+
+input[type="checkbox"]{ 
+    -webkit-appearance: none;
+    width: 50px;
+    height: 25px;
+    border-radius: 40px;
+    background:  #eee;
+    position: relative;
+    
+}
+input[type="checkbox"]:before{ 
+    content:'';
+     width: 25px;
+     height: 24px;
+     background: skyblue;
+      position: absolute;
+     border-radius: 50px;
+     right: 25px;
+     transition: ease all .4s;
+}
+input[type="checkbox"]:checked:before{
+    right: 0;
+}
