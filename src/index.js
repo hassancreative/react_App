@@ -1,24 +1,21 @@
-import React , { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import Hellow from './components/Hellow'
- 
-import Clock from './components/Clock'
 
-class MainApp extends Component{
-    constructor(props){
+class MainApp extends Component {
+    constructor(props) {
         super(props);
 
-        
+
     }
 
-    render(){ 
-        return(
-            <React.Fragment>
-             <Clock />
-            </React.Fragment>
+    render() {
+        return (
+            <Fragment>
+                <div>Testin</div>
+            </Fragment>
         );
     }
 }
